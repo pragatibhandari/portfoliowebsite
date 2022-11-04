@@ -34,7 +34,7 @@ section {
 .about,
 .services,
 .skills,
-.teams,
+.projects,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
@@ -254,16 +254,16 @@ section .title::after {
 }
 /* services section styling */
 .services,
-.teams {
+.projects {
   color: #fff;
   background: #111;
 }
 .services .title::before,
-.teams .title::before {
+.projects .title::before {
   background: #fff;
 }
 .services .title::after,
-.teams .title::after {
+.projects .title::after {
   background: #111;
   content: "what i provide";
 }
@@ -293,10 +293,18 @@ section .title::after {
 .services .serv-content .card:hover i {
   color: #fff;
 }
+.services .serv-content .card.text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+}
+a {
+  color: white;
 }
 /* skills section styling */
 .skills .title::after {
@@ -371,11 +379,11 @@ section .title::after {
 .skills-content .right .mysql::before {
   width: 70%;
 }
-/* teams section styling */
-.teams .title::after {
+/* projects section styling */
+.projects .title::after {
   content: "who with me";
 }
-.teams .carousel .card {
+.projects .carousel .card {
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
@@ -383,33 +391,35 @@ section .title::after {
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover {
+.projects .carousel .card:hover {
   background: crimson;
 }
-.teams .carousel .card .box {
+.projects .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  padding: 20px 0px;
+  height: 500px;
 }
-.teams .carousel .card:hover .box {
+.projects .carousel .card:hover .box {
   transform: scale(1.05);
 }
-.teams .carousel .card .text {
+.projects .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-.teams .carousel .card img {
-  height: 150px;
-  width: 150px;
+.projects .carousel .card img {
+  height: 250px;
+  width: 250px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid crimson;
+  border: 2px solid crimson;
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img {
+.projects .carousel .card:hover img {
   border-color: #fff;
 }
 .owl-dots {
