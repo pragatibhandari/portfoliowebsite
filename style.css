@@ -1,5 +1,6 @@
 /*  import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import "utilities.css";
 * {
   margin: 0;
   padding: 0;
@@ -674,4 +675,41 @@ footer span a:hover {
     font-size: 23px;
     line-height: 38px;
   }
+}
+.social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 10%;
+}
+.social-icons ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.social-icons ul li {
+  list-style: none;
+  font-size: 40px;
+  width: 100%;
+}
+.social-icons ul li a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  background: black;
+  border-radius: 50%;
+  transition: 0.6s;
+  transform: translate(10, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-icons ul li a:hover {
+  color: black;
+  background: rgb(255, 255, 255);
+}
+.contact-container2 {
+  display: flex;
 }
