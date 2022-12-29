@@ -299,6 +299,9 @@ section .title::after {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+.services .serv-content .card.domain:hover {
+  color: rgb(13, 182, 50);
+}
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
@@ -306,13 +309,12 @@ section .title::after {
 }
 a {
   color: white;
-  background: rgb(48, 17, 223);
 }
 .domain {
-  color: rgb(48, 17, 223);
+  color: rgba(247, 243, 243, 0.5);
 }
 .coming_soon {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(247, 243, 243, 0.5);
 }
 /* skills section styling */
 .skills .title::after {
