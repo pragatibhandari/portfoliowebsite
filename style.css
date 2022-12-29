@@ -289,7 +289,7 @@ section .title::after {
 .services .serv-content .card i {
   font-size: 50px;
   color: crimson;
-  transition: color 0.3s ease;
+  transition: color 0.8s ease;
 }
 .services .serv-content .card:hover i {
   color: #fff;
@@ -306,6 +306,13 @@ section .title::after {
 }
 a {
   color: white;
+  background: rgb(48, 17, 223);
+}
+.domain {
+  color: rgb(48, 17, 223);
+}
+.coming_soon {
+  color: rgba(0, 0, 0, 0.5);
 }
 /* skills section styling */
 .skills .title::after {
