@@ -65,3 +65,16 @@ $(document).ready(function () {
     },
   });
 });
+function SendMail() {
+  var params = {
+    from_name: document.getElementById("fullName").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs
+    .send("service_yk3zjwo", "template_q5sje89", params)
+    .then(function (res) {
+      document.getElementById("success").innerHTML =
+        "Message Successfully Sent";
+    });
+}

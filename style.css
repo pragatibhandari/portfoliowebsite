@@ -65,7 +65,7 @@ section .title::before {
   left: 50%;
   width: 180px;
   height: 3px;
-  background: rgb(247, 244, 244);
+  background: rgb(0, 0, 0);
   transform: translateX(-50%);
 }
 section .title::after {
@@ -161,6 +161,7 @@ section .title::after {
   filter: brightness(90%);
 }
 /* home section styling */
+
 .home {
   display: flex;
   background: url("images/background") no-repeat center;
@@ -456,11 +457,10 @@ a {
 /* contact section styling */
 .contact .title::after {
   content: "get in touch";
-  background-color: #111;
 }
 .contact {
-  background-color: #111;
-  color: rgb(255, 255, 255);
+  background-color: rgb(252, 249, 249);
+  color: #111;
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -492,7 +492,7 @@ a {
   font-weight: 500;
 }
 .contact .contact-content .info .sub-title {
-  color: rgb(238, 223, 223);
+  color: rgb(31, 30, 30);
 }
 .contact .right form .fields {
   display: flex;
