@@ -256,26 +256,27 @@ section .title::after {
   background: none;
 }
 /* services section styling */
-.services,
+.services {
+  background: #111;
+  background: url("images/laptop2.png") no-repeat left;
+
+  height: 60vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: contain;
+  background-color: #110f0e;
+}
 .projects {
   background: #111;
-  background: url("images/laptop2.png") no-repeat right;
 
-  display: flex;
   background: url("images/laptop2.png") no-repeat right;
   height: 100vh;
   color: #fff;
   min-height: 500px;
   background-size: contain;
-  
-  font-family: "Ubuntu", sans-serif;
   background-color: #110f0e;
 }
 
-  color: #fff;
-
-  background-size: content;
-}
 .services .title::before,
 .projects .title::before {
   background: #fff;
@@ -477,6 +478,8 @@ a {
 .contact {
   background-color: rgb(252, 249, 249);
   color: #111;
+  background: url("images/laptop.webp") no-repeat left;
+  background-size: content;
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -508,7 +511,8 @@ a {
   font-weight: 500;
 }
 .contact .contact-content .info .sub-title {
-  color: rgb(31, 30, 30);
+  color: rgb(245, 245, 245);
+  background: red;
 }
 .contact .right form .fields {
   display: flex;
