@@ -3,7 +3,6 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -48,6 +47,7 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 section .title {
   position: relative;
@@ -172,10 +172,11 @@ section .title::after {
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
   background-color: #110f0e;
+  float: right;
+  width: 100%;
 }
 .home .max-width {
   width: 100%;
-  display: flex;
 }
 .home .max-width .row {
   margin-right: 0;
@@ -213,6 +214,9 @@ section .title::after {
   background: none;
 }
 /* about section styling */
+.about {
+  padding-top: 1000px;
+}
 .about .title::after {
   content: "who i am";
 }
@@ -220,8 +224,8 @@ section .title::after {
   width: 45%;
 }
 .about .about-content .left img {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -258,22 +262,18 @@ section .title::after {
 /* services section styling */
 .services {
   background: #111;
-  background: url("images/laptop2.png") no-repeat left;
-
-  height: 60vh;
   color: #fff;
   min-height: 500px;
-  background-size: contain;
   background-color: #110f0e;
 }
 .projects {
   background: #111;
 
-  background: url("images/laptop2.png") no-repeat right;
+  background: url("images/back2.png") no-repeat;
   height: 100vh;
   color: #fff;
   min-height: 500px;
-  background-size: contain;
+  background-size: cover;
   background-color: #110f0e;
 }
 
@@ -476,10 +476,14 @@ a {
   content: "get in touch";
 }
 .contact {
-  background-color: rgb(252, 249, 249);
   color: #111;
-  background: url("images/laptop.webp") no-repeat left;
-  background-size: content;
+  background: url("images/laptop.webp") no-repeat right;
+  background-size: contain;
+}
+@media (max-width: 1104px) {
+  .contact {
+    background: rgb(252, 249, 249);
+  }
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -511,8 +515,7 @@ a {
   font-weight: 500;
 }
 .contact .contact-content .info .sub-title {
-  color: rgb(245, 245, 245);
-  background: red;
+  color: crimson;
 }
 .contact .right form .fields {
   display: flex;
@@ -555,7 +558,7 @@ a {
   align-items: center;
 }
 .right form .button-area button {
-  color: #fff;
+  color: white;
   display: block;
   width: 160px !important;
   height: 45px;
